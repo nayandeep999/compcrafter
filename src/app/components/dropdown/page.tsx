@@ -5,10 +5,11 @@ import Wrapper from "../(shared)/Wrapper";
 import Dropdown, { DropdownItem } from "./Dropdown";
 import { DropdownCode } from "./DropdownCode";
 import { DropdownUsage } from "./DropdownUsage";
+import luis from "@/assets/luis.png";
 
 const PlanSelectorPage = () => {
-const imports = `import { Dropdown, DropdownItem } from "compcrafter"`;
-  
+  const imports = `import { Dropdown, DropdownItem } from "compcrafter"`;
+
   return (
     <Wrapper
       title="Dropdown"
@@ -26,11 +27,7 @@ const imports = `import { Dropdown, DropdownItem } from "compcrafter"`;
             }
           >
             <DropdownItem>
-              <Image
-                src="https://api.dicebear.com/9.x/initials/svg?seed=Luis"
-                alt="avatar"
-                className="w-12 rounded-full"
-              />
+              <Image src={luis} alt="avatar" className="w-12 rounded-full" />
               <div className="py-2">
                 <p className="font-medium">Luis Udell</p>
                 <a href="" className="text-sm font-medium text-gray-400">

@@ -1,6 +1,7 @@
 import { ChevronFirst, ChevronLast, MoreVertical } from "lucide-react";
 import Image from "next/image";
 import { createContext, ReactNode, useContext, useState } from "react";
+import logoispum from "@/assets/logoispum.png";
 
 // Define types for the context and props
 export interface SidebarContextType {
@@ -29,7 +30,7 @@ export default function Sidebar({ children }: SidebarProps) {
       <nav className="h-full flex flex-col bg-zinc-800 border-r border-zinc-700 shadow-sm">
         <div className="p-4 pb-2 flex justify-between items-center">
           <Image
-            src="https://img.logoipsum.com/243.svg"
+            src={logoispum}
             className={`overflow-hidden transition-all ${
               expanded ? "w-32" : "w-0"
             }`}
