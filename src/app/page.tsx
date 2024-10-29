@@ -9,6 +9,7 @@ import {
 import { useEffect } from "react";
 
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 const COLORS = ["#13FFAA", "#1E67C6", "#CE84CF", "#DD335C"];
 
@@ -20,7 +21,6 @@ export default function Home() {
   const border = useMotionTemplate`1px solid ${color}`;
   const boxShadow = useMotionTemplate`0px 4px 24px ${color}`;
   useEffect(() => {
-
     animate(color, COLORS, {
       ease: "easeInOut",
       duration: 10,
@@ -50,16 +50,17 @@ export default function Home() {
             Master React by building beautiful, reusable components from
             scratch.
           </p>
-          <motion.button
-            whileHover={{ scale: 1.015 }}
-            whileTap={{ scale: 0.985 }}
-            style={{ boxShadow, border }}
-            className="group relative flex w-fit items-center gap-1.5 rounded-full bg-gray-900/10 px-4 py-2 text-gray-50 
-          transition-colors hover:bg-gray-900/5"
-          >
-            Get started
-            <ArrowRight className="transition-transform group-hover:-rotate-45 group-active:-rotate-12" />
-          </motion.button>
+          <Link href="/components/accordian">
+            <motion.button
+              whileHover={{ scale: 1.015 }}
+              whileTap={{ scale: 0.985 }}
+              style={{ boxShadow, border }}
+              className="group relative flex w-fit items-center gap-1.5 rounded-full bg-gray-900/10 px-4 py-2 text-gray-50 transition-colors hover:bg-gray-900/5"
+            >
+              Get started
+              <ArrowRight className="transition-transform group-hover:-rotate-45 group-active:-rotate-12" />
+            </motion.button>
+          </Link>
         </div>
       </motion.section>
     </>
