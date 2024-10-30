@@ -19,7 +19,6 @@ export default function page() {
           <div className="flex flex-col items-start mt-8 gap-8 text-gray-100">
             <h2 className="text-md font-medium">
               CompCrafter is more than a component library—it&apos;s a resource for
-              <br />
               learning and mastering React.
             </h2>
             <h2 className="text-md font-semibold">

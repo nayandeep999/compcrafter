@@ -3,8 +3,7 @@ import Accordian, { AccordianItem } from "./Accordian";
 import AccordianCode from "./AccordianCode";
 
 const AccordionPage = () => {
-  const imports = `import Accordian from "./Accordian";
-import { AccordianItem } from "./Accordian";`;
+  const imports = `import { Accordian, AccordianItem }from "compcrafter";`;
   const usage = `<Accordian className="max-w-lg mb-5">
   <AccordianItem value={1} trigger="1st Accordian">
         Yes! It is the first accordian

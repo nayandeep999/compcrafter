@@ -44,7 +44,7 @@ export default function Home() {
             text-3xl font-bold leading-tight text-transparent sm:text-4xl sm:leading-tight 
             md:text-5xl md:leading-tight text-balance"
           >
-            Elevate Your React Game
+            Elevate Your React Skills
           </div>
           <p className="mt-4 mb-6 max-w-md font-medium text-center text-sm text-balance sm:text-wrap leading-normal text-gray-500 md:text-lg md:leading-relaxed">
             Master React by building beautiful, reusable components from
