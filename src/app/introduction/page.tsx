@@ -2,8 +2,8 @@ import Sidebar from "../components/(shared)/Sidebar";
 
 export default function page() {
   return (
-    <>
-      <div className="flex p-4 mt-3">
+    <div className="container flex justify-center items-center w-full mx-auto">
+      <div className="flex w-full py-4 mt-16">
         {/* Sidebar */}
         <div>
           <Sidebar />
@@ -18,8 +18,8 @@ export default function page() {
           </p>
           <div className="flex flex-col items-start mt-8 gap-8 text-gray-100">
             <h2 className="text-md font-medium">
-              CompCrafter is more than a component library—it&apos;s a resource for
-              learning and mastering React.
+              CompCrafter is more than a component library—it&apos;s a resource
+              for learning and mastering React.
             </h2>
             <h2 className="text-md font-semibold">
               What makes CompCrafter different?
@@ -33,8 +33,8 @@ export default function page() {
               outs of React along the way.
             </h2>
             <h2 className="text-md font-medium">
-              Whether you&apos;re building your own library or sharpening your React
-              skills, CompCrafter is here to support your journey.
+              Whether you&apos;re building your own library or sharpening your
+              React skills, CompCrafter is here to support your journey.
             </h2>
             <h2 className="text-md font-medium italic">
               Use this as a reference to build your own component libraries.
@@ -42,6 +42,6 @@ export default function page() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }

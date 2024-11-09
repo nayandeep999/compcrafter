@@ -17,8 +17,8 @@ export default function Page() {
   };
 
   return (
-    <>
-      <div className="flex p-4 mt-3">
+    <div className="container flex justify-center items-center w-full mx-auto">
+      <div className="flex w-full py-4 mt-16">
         {/* Sidebar */}
         <div>
           <Sidebar />
@@ -84,6 +84,6 @@ export default function Page() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }

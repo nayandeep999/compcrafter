@@ -11,7 +11,7 @@ export function MainNav() {
     <nav className="hidden md:flex md:items-center md:space-x-4 lg:space-x-6">
       <Link href="/" className="mr-6 flex items-center space-x-2">
         <Pickaxe className="h-6 w-6" />
-        <span className="font-bold">{siteConfig.name}</span>
+        <span className="font-semibold tracking-wide">{siteConfig.name}</span>
       </Link>
       <Link
         href="/components/accordian"

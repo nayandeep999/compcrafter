@@ -7,7 +7,7 @@ import { FC } from "react";
 const Sidebar: FC = () => {
   const pathname = usePathname();
   return (
-    <div className="hidden sm:flex sm:flex-col sm:items-start mx-3 sm:h-full sm:w-64">
+    <div className="hidden sm:flex sm:flex-col sm:items-start sm:h-full sm:w-64">
       <h2 className="py-2 px-4 text-sm font-bold">Getting Started</h2>
       <Link
         href="/introduction"
