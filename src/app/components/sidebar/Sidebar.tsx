@@ -2,6 +2,7 @@ import { ChevronFirst, ChevronLast, MoreVertical } from "lucide-react";
 import Image from "next/image";
 import { createContext, ReactNode, useContext, useState } from "react";
 import logoispum from "@/assets/logoispum.png";
+import jdAvatar from "@/assets/JD avatar.png"
 
 // Define types for the context and props
 export interface SidebarContextType {
@@ -50,9 +51,9 @@ export default function Sidebar({ children }: SidebarProps) {
 
         <div className="border-t border-zinc-700 flex p-3">
           <Image
-            src="https://ui-avatars.com/api/?background=3730a3&color=c7d2fe&bold=true"
+            src={jdAvatar}
             alt="Avatar"
-            className="w-10 h-10 rounded-md"
+            className="size-10 rounded-full"
           />
           <div
             className={`flex justify-between items-center overflow-hidden transition-all ${
